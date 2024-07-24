@@ -1,5 +1,5 @@
 # project: guess number game
-# this project just a small challenge for my programming knowledge.
+# this project just a small challenge for test my programming knowledge.
 
 from random import choice
 import argparse
