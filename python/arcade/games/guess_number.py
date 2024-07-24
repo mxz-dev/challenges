@@ -28,7 +28,7 @@ def gussgame(person):
     # nested defined function
     def play_game():
         nonlocal game_count
-        print(f"\n\nWelcome to Guess Number Game\U0001F47E.\nI'm thinking of one of the three numbers (1, 2, 3)! {name}, can you guess which one i'm thinking of?... \U0001F914\n")
+        print(f"\n\nWelcome to Guess Number Game\U0001F47E .\nI'm thinking of one of the three numbers (1, 2, 3)! {name}, can you guess which one i'm thinking of?... \U0001F914 \n")
         player_choice = int(input("1,2,3> "))
         random_num = choice("123")
         num = int(random_num)
@@ -41,17 +41,17 @@ def gussgame(person):
             winning_percentage = calc_win_percentage(p,n)
             if winning_percentage >= 50.1:
                 player_wins += 1 
-                return f"{name} is win \U0001F973\n"
+                return f"{name} is win \U0001F973 \n"
             elif winning_percentage == 50:
                 python_wins += 1
-                return f"Very close {name} \U0001F632\n"
+                return f"Very close {name} \U0001F632 \n"
             else:
                 python_wins += 1
-                return f"{name} is lose \U0001F4A9\n"
+                return f"{name} is lose \U0001F4A9 \n"
         game_result = winning_decide(player_choice,num)
         if game_result:
             game_count += 1
-            print(f"python choose: {num}\U0001F40D\n{game_result}\nyou'r winning percentage {round(winning_percentage)}%\n{name} won: {player_wins}\U0001F9D1\npython won: {python_wins}\U0001F40D\nplayed game: {game_count}\n\ngame is over {name}! do you wanna play again?\U0001F917	 \ny for yes\nq for quite.")
+            print(f"python choose: {num}\U0001F40D \n{game_result}\nyou'r winning percentage {round(winning_percentage)}%\n{name} won: {player_wins}\U0001F9D1 \npython won: {python_wins}\U0001F40D \nplayed game: {game_count}\n\ngame is over {name}! do you wanna play again?\U0001F917	 \ny for yes\nq for quite.")
             play_again = str(input("Y/Q> "))
             if play_again.lower() == "y":
                 play_game() # recursive function
