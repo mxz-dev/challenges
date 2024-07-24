@@ -38,7 +38,7 @@ def rps(player):
         if random_choice and player_choice: winner = win_decide(player_choice,random_choice)
         if winner:
             game_count += 1
-            print(f"\n{winner}\n{name} wins {player_wins} \U0001F389\npython wins {python_wins} \U0001F40D\ndraws {tie_games} \U0001F632\nplayed game {game_count} \U0001F64C\n\ngame is over {name}, do you wanna play again?\ny for yes\nq for quite")
+            print(f"\n{winner}\n{name} wins {player_wins} \U0001F389 \npython wins {python_wins} \U0001F40D \ndraws {tie_games} \U0001F632 \nplayed game {game_count} \U0001F64C \n\ngame is over {name}, do you wanna play again?\ny for yes\nq for quite")
             play_again = str(input("Y/Q>"))
         if play_again.lower() == "y":
             play()
